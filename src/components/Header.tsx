@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import rehanLogo from "@/assets/comp_logo.png.png";
+import rehanLogo from "@/assets/rehan-logo.png";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
