@@ -35,7 +35,7 @@ const AboutUs = () => {
               <div className="flex items-center gap-3">
                 <Mail className="text-primary w-5 h-5" />
                 <a href="mailto:Rehangroupof.llc@gmail.com" className="text-accent hover:text-accent/80 transition-colors">
-                  Rehangroupof.llc@gmail.com
+                  rehangroupof.llc@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
