@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
-import rehanLogo from "@/assets/rehan-logo.png";
+import rehanLogo from "@/assets/comp_logo.png.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
