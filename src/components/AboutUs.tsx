@@ -75,7 +75,7 @@ const AboutUs = () => {
                   <span className="text-xs font-bold text-primary-foreground">D</span>
                 </div>
               </div>
-              <h4 className="text-xl font-bold text-foreground mb-2">Rehan Ahmed</h4>
+              <h4 className="text-xl font-bold text-foreground mb-2">Rehan Firoz</h4>
               <p className="text-primary font-medium mb-3">Director</p>
               <p className="text-sm text-muted-foreground">
                 Visionary leader with expertise in technology solutions and business development
@@ -96,7 +96,7 @@ const AboutUs = () => {
                   <span className="text-xs font-bold text-accent-foreground">CD</span>
                 </div>
               </div>
-              <h4 className="text-xl font-bold text-foreground mb-2">Arshad Khan</h4>
+              <h4 className="text-xl font-bold text-foreground mb-2">Sabir Alam</h4>
               <p className="text-accent font-medium mb-3">Co-Director</p>
               <p className="text-sm text-muted-foreground">
                 Strategic partner specializing in operations management and client relations

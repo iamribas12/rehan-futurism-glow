@@ -44,8 +44,9 @@ const Services = () => {
       description: "Custom software solutions with 250+ applications successfully deployed across Education, Corporate, Banking, Mining, and Big Industry sectors.",
       highlights: [
         "Custom Software Development",
-        "Enterprise Applications",
+        "Enterprise Applications", 
         "Mobile App Development",
+        "AI Automation: Streamline your business with intelligent AI automation solutions tailored for growth and efficiency",
         "250+ Deployed Applications"
       ],
       buttonText: "View Applications",
