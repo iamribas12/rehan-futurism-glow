@@ -24,7 +24,7 @@ const Header = () => {
             <img 
               src={rehanLogo} 
               alt="Rehan Group International Logo" 
-              className="h-12 w-12 hover-lift transition-all duration-300 group-hover:scale-110"
+              className="h-20 w-20 hover-lift transition-all duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
