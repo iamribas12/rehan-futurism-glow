@@ -2,95 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Futuristic Design System - Premium 3D Glassmorphism Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core futuristic color palette */
+    --background: 0 0% 4%; /* Deep black base */
+    --foreground: 0 0% 98%; /* Pure white text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glassmorphism card system */
+    --card: 216 100% 8%; /* Deep navy blue */
+    --card-foreground: 0 0% 98%;
+    --glass: 216 100% 15% / 0.1; /* Glass effect base */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 216 100% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Royal gold system */
+    --primary: 43 100% 65%; /* Royal gold */
+    --primary-glow: 43 100% 75%; /* Brighter gold for glow */
+    --primary-foreground: 0 0% 4%; /* Dark text on gold */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Navy blue sections */
+    --secondary: 216 100% 15%; /* Navy blue */
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted glassmorphism */
+    --muted: 216 50% 10%;
+    --muted-foreground: 220 10% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Electric accents */
+    --accent: 180 100% 50%; /* Electric cyan */
+    --accent-foreground: 0 0% 4%;
+    --neon-green: 120 100% 50%; /* Electric green */
+    --neon-blue: 200 100% 60%; /* Electric blue */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Glassmorphism borders */
+    --border: 216 100% 15% / 0.3;
+    --input: 216 100% 15%;
+    --ring: 43 100% 65%; /* Gold ring */
 
-    --radius: 0.5rem;
+    --radius: 1rem; /* Larger radius for modern look */
 
-    --sidebar-background: 0 0% 98%;
+    /* 3D Effects and Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(43 100% 65%), hsl(43 100% 75%));
+    --gradient-glass: linear-gradient(135deg, hsl(216 100% 15% / 0.1), hsl(216 100% 25% / 0.05));
+    --gradient-neon: linear-gradient(90deg, hsl(180 100% 50%), hsl(120 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(216 100% 8%));
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Shadows and Glows */
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.37);
+    --shadow-gold: 0 0 20px hsl(43 100% 65% / 0.5);
+    --shadow-neon: 0 0 30px hsl(180 100% 50% / 0.6);
+    --shadow-card: 0 20px 40px hsl(0 0% 0% / 0.3);
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animation durations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
+  /* Dark mode inherits the same futuristic theme */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Same variables - this theme is designed to be dark by default */
   }
 }
 
@@ -100,6 +76,72 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+    background: var(--gradient-hero);
+    min-height: 100vh;
+  }
+
+  /* Glassmorphism utilities */
+  .glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl p-6;
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Neon glow effects */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+    text-shadow: 0 0 10px hsl(var(--accent));
+  }
+
+  .gold-glow {
+    box-shadow: var(--shadow-gold);
+    text-shadow: 0 0 10px hsl(var(--primary));
+  }
+
+  /* 3D transformations */
+  .transform-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: var(--shadow-card), var(--shadow-neon);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .neon-text {
+    background: var(--gradient-neon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Smooth animations */
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+
+  .bounce-transition {
+    transition: var(--transition-bounce);
   }
 }
