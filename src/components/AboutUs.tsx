@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Users } from "lucide-react";
-import directorPhoto from "@/assets/director-photo.png";
-import coDirectorPhoto from "@/assets/co-director-photo.png";
+import directorPhoto from "@/assets/Director.jpeg.jpg";
+import coDirectorPhoto from "@/assets/Director.jpeg.jpg";
 
 const AboutUs = () => {
   return (
