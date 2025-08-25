@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="text-sm text-foreground">Email</div>
-                  <div className="text-xs">Rehangroupof.llc@gmail.com</div>
+                  <div className="text-xs">rehangroupof.llc@gmail.com</div>
                 </div>
                 <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>
